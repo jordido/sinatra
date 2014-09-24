@@ -1,0 +1,10 @@
+<h3>
+	Found Songs :
+	<ul>
+		<% @list.each do |song| %>
+		<li>
+			<%= song.join("\n") %>
+		</li>
+		<% end %>
+	</ul>
+</h3>
