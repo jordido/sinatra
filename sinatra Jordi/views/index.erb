@@ -1,0 +1,24 @@
+<h3>
+	Input your song
+</h3>
+<form action='/new/songs' method='post'>
+	Author: 
+	<input name='artist'> <br>
+	Song: 
+	<input name='song'>  <br>
+	<input type="submit" value='Add song'/>
+</form>
+<h3>
+	List of Songs
+</h3>
+	<ul>
+		<% @list.each do |song| %>
+		<li>
+			<%= song.join("\n") %>
+		</li>
+		<% end %>
+	</ul>
+
+
+
+		

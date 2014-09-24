@@ -1,0 +1,17 @@
+<p>Add a new song!</p>
+
+<form action='/songs/new' method='post'>
+  Author:
+  <input name='author'/>
+  Name:
+  <input name='name'/>
+  <input type='submit' value='Add!'/>
+</form>
+
+<p>This is the list of songs!</p>
+
+<ul>
+  <% @song_list.each do |name, author| %>
+    <li>'<%= name %>' by <%= author %></li>
+  <% end %>
+</ul>
